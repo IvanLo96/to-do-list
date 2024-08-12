@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #task-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  #add-task {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #add-task:hover {
+    background-color: #45a049;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .task-item:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .edit-task, .delete-task, .save-task, .cancel-edit {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .edit-task {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .delete-task {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  .save-task {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-edit {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .edit-input {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
